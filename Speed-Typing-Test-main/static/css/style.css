@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#timer {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+#passage {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#typedText {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+#submitBtn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+#submitBtn:hover {
+    transform: scale(1.05);
+    background-color: #45a049;
+}
+
+#results {
+    margin-top: 30px;
+    font-size: 1.5em;
+    display: none; /* Hidden initially */
+}
+
+#actionButtons {
+    margin-top: 40px;
+}
+
+#startAgainBtn, #exitBtn ,#syncBtn{
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#startAgainBtn:hover, #exitBtn:hover, #syncBtn:hover{
+    transform: scale(1.05);
+    background-color: #0056b3;
+}
+
+/* Add a slight shake effect for errors */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-10px); }
+    40%, 80% { transform: translateX(10px); }
+}
+
+#error {
+    animation: shake 0.5s;
+    color: red;
+}
+
+/* Good accuracy - green border */
+.good-accuracy {
+    border: 2px solid #4CAF50;
+    background-color: #e6ffe6;
+}
+
+/* Poor accuracy - red border */
+.poor-accuracy {
+    border: 2px solid #e74c3c;
+    background-color: #ffe6e6;
+}
